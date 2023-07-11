@@ -31,6 +31,5 @@ The CNN Custom Model is built with:
 7. Activation Function:
    a. ReLU (For intermediate Layers):The rectified linear activation function or ReLU is a linear function that will output the input directly if it is positive, otherwise, it will output zero. As ReLU overcomes the vanishing gradient problem, allowing models to learn faster and perform better, it is being used for intermediate layers.
    b. softmax(for output layer):The softmax function is used as the activation function in the output layer of for multiclass classification problems. As in current case, there are 9 possible cases of output softmax is used at output layer.
-8.
-9.   
+   
 <img width="389" alt="image" src="https://github.com/rgarudadri/MelanomaDetectionAssignment/assets/123804716/32156c76-cab5-4ad6-b639-82fc2b8df9f3">
