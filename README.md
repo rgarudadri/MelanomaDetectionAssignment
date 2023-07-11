@@ -18,4 +18,19 @@ The data set contains the following diseases:
  - Vascular lesion
 
 ## CNN Architecture:
+The CNN Custom Model is built with:
+1. Rescaling Layer: To rescale the input images of [0..255] range to [0..1]
+2. 3 Convolution +Max Pooling layers (2D): (with 3x3 filters), and increasing the number of filters for each convolution layer
+  a. Convolutional Layer - convolution converts all the pixels in its receptive field into a single value. For example, if you would apply a convolution to an image, you will be decreasing the image size as well as bringing all the information in the field together into a single pixel.
+  b. Pooling Layer - Pooling layers are used to reduce the dimensions of the feature maps. 
+3. Dropout Layer:The Dropout layer randomly sets input units to 0, which helps in avoiding overfitting.
+     a. Dropout is set as 40% after convolution + Maxpool before flatting input.
+     b. Before the final activation, dropout is set to 25%
+5. Flatten Layer: TO flatten inputs to 1D array to feed the input to NN
+6. Dense Layer: Dense Layer with 128 Nuerons. Dense layer is FC (Fully Connected),  which mean each neuron receives input from all neurons of its previous layer
+7. Activation Function:
+   a. ReLU (For intermediate Layers):The rectified linear activation function or ReLU is a linear function that will output the input directly if it is positive, otherwise, it will output zero. As ReLU overcomes the vanishing gradient problem, allowing models to learn faster and perform better, it is being used for intermediate layers.
+   b. softmax(for output layer):The softmax function is used as the activation function in the output layer of for multiclass classification problems. As in current case, there are 9 possible cases of output softmax is used at output layer.
+8.
+9.   
 <img width="389" alt="image" src="https://github.com/rgarudadri/MelanomaDetectionAssignment/assets/123804716/32156c76-cab5-4ad6-b639-82fc2b8df9f3">
