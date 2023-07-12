@@ -28,11 +28,12 @@ Custom CNN model is built to address cancer detection problem. Details of the mo
      b. Before the final activation, dropout is set to 25%
 4. **Flatten Layer**: TO flatten inputs to 1D array to feed the input to NN
 5. **Dense Layer**: Dense Layer with 128 Nuerons. Dense layer is FC (Fully Connected),  which mean each neuron receives input from all neurons of its previous layer
-
-## Author:
-Ramakrishna Garudadri (GitHub Link: https://github.com/rgarudadri)
-7. **Activation Function**:
+6. **Activation Function**:
    a. ReLU (For intermediate Layers):The rectified linear activation function or ReLU is a linear function that will output the input directly if it is positive, otherwise, it will output zero. As ReLU overcomes the vanishing gradient problem, allowing models to learn faster and perform better, it is being used for intermediate layers.
    b. softmax(for output layer):The softmax function is used as the activation function in the output layer of for multiclass classification problems. As in current case, there are 9 possible cases of output softmax is used at output layer.
    
 <img width="389" alt="image" src="https://github.com/rgarudadri/MelanomaDetectionAssignment/assets/123804716/32156c76-cab5-4ad6-b639-82fc2b8df9f3">
+
+
+## Author:
+Ramakrishna Garudadri (GitHub Link: https://github.com/rgarudadri)
